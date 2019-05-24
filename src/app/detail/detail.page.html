@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-item style="color:white;">
+        <ion-avatar style="margin: 10px" item-start>
+            <ion-img [src]="user.thumbnail"></ion-img>
+        </ion-avatar>
+        <ion-label class="user-holder">
+            <h1 style="color:white; font-weight: bold;">{{user.name}}</h1>
+            <h4 style="color:white">{{user.email}}</h4>
+        </ion-label>
+    </ion-item>
+    <ion-item class="user-stats">
+      <ion-grid>
+        <ion-row justify-content-center>
+            <ion-col align-self-center>
+              <ion-row justify-content-center>
+                {{random.contacts}}
+              </ion-row>
+              <ion-row justify-content-center>
+                Contacts
+              </ion-row>
+            </ion-col>
+            <ion-col align-self-center>
+              <ion-row justify-content-center>
+                {{random.favourites}}
+              </ion-row>
+              <ion-row justify-content-center>
+                Favorites
+              </ion-row>
+            </ion-col>
+            <ion-col align-self-center>
+              <ion-row justify-content-center>
+                {{random.groups}}
+              </ion-row>
+              <ion-row justify-content-center>
+                Groups
+              </ion-row>
+            </ion-col>
+          </ion-row> 
+      </ion-grid>
+
+    </ion-item>
+  </ion-card>
+
+
+  <ion-card class="options-card">
+    <ion-list>
+      <ion-item>
+          <ion-icon name="star" item-start large class="icon"></ion-icon>
+          <ion-label>
+            <h6 class="label-text">Add to favorites</h6>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="call" item-start large class="icon"></ion-icon>
+          <ion-label>
+            <h6 class="label-text">{{user.phone}}</h6>
+          </ion-label>
+          <ion-badge style="background:#218583" (click)="call()" item-end>CALL</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="pin" item-start large class="icon"></ion-icon>
+          <ion-label>
+            <h6 class="label-text">{{user.street}}</h6>
+          </ion-label>
+        </ion-item>
+    </ion-list>        
+  </ion-card>
+
+</ion-content>

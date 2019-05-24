@@ -1,0 +1,36 @@
+ion-header {
+    --ion-background-color: #f5f5f5;
+}
+
+ion-content {
+    --ion-background-color: #f5f5f5;
+}
+
+ion-card {
+    --ion-background-color:#2abab6;
+    border-radius: 10px;
+}
+
+.options-card {
+    --ion-background-color: white;
+}
+
+.icon {
+    color: #2abab6;
+    padding-right:10px
+}
+
+.label-text {
+    color:#494949
+}
+
+.user-holder {
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.user-stats {
+    background:#218583;
+    color:white;
+    align-content: center;
+}
