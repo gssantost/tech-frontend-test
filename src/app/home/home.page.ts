@@ -20,7 +20,7 @@ export class HomePage {
           return this.compare(first, second)
         });
         this.orderedUsers = this.groupByLetter(this.users);
-        console.log(this.orderedUsers);
+        //console.log(this.orderedUsers);
       });
   }
 

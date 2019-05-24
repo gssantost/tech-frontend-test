@@ -9,7 +9,7 @@ import { LoadingController } from '@ionic/angular';
 })
 export class DetailPage implements OnInit {
 
-  user: {} = {
+  user = {
     name: '',
     street: '',
     phone: '',
@@ -19,7 +19,7 @@ export class DetailPage implements OnInit {
 
   loading: any;
 
-  random: {} = {
+  random = {
     contacts: this.getRandomNumber(),
     favourites: this.getRandomNumber(),
     groups: this.getRandomNumber()
